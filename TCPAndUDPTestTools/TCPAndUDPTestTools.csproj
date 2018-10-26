@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3825BD6-B4C9-4B94-8872-8AF97DF968CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCPAndUDPTestTools</RootNamespace>
+    <AssemblyName>TCPAndUDPTestTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Client\TCP_IPv4_Client_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Client\TCP_IPv4_Client_Page.Designer.cs">
+      <DependentUpon>TCP_IPv4_Client_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Client\TCP_IPv6_Client_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Client\TCP_IPv6_Client_Page.Designer.cs">
+      <DependentUpon>TCP_IPv6_Client_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Server\TCP_IPv4_Server_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Server\TCP_IPv4_Server_Page.Designer.cs">
+      <DependentUpon>TCP_IPv4_Server_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Client\UDP_IPv4_Client_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Client\UDP_IPv4_Client_Page.Designer.cs">
+      <DependentUpon>UDP_IPv4_Client_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Server\UDP_IPv4_Server_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Server\UDP_IPv4_Server_Page.Designer.cs">
+      <DependentUpon>UDP_IPv4_Server_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Client\UDP_IPv6_Client_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Client\UDP_IPv6_Client_Page.Designer.cs">
+      <DependentUpon>UDP_IPv6_Client_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Server\UDP_IPv6_Server_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Server\UDP_IPv6_Server_Page.Designer.cs">
+      <DependentUpon>UDP_IPv6_Server_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Server\TCP_IPv6_Server_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Server\TCP_IPv6_Server_Page.Designer.cs">
+      <DependentUpon>TCP_IPv6_Server_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Client\TCP_IPv4_Client_Page.resx">
+      <DependentUpon>TCP_IPv4_Client_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Client\TCP_IPv6_Client_Page.resx">
+      <DependentUpon>TCP_IPv6_Client_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Server\TCP_IPv4_Server_Page.resx">
+      <DependentUpon>TCP_IPv4_Server_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Client\UDP_IPv4_Client_Page.resx">
+      <DependentUpon>UDP_IPv4_Client_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Server\UDP_IPv4_Server_Page.resx">
+      <DependentUpon>UDP_IPv4_Server_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Client\UDP_IPv6_Client_Page.resx">
+      <DependentUpon>UDP_IPv6_Client_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Server\UDP_IPv6_Server_Page.resx">
+      <DependentUpon>UDP_IPv6_Server_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Server\TCP_IPv6_Server_Page.resx">
+      <DependentUpon>TCP_IPv6_Server_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="net.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
